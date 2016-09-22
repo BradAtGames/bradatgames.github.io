@@ -1,0 +1,32 @@
+<!-- Navbar -->
+<div class="navbar" id="navbar">
+  <nav class="top-nav">
+    {% comment %}
+    The code below dynamically generates a navbar of posts that use the 'page' layout.
+    {% endcomment %}
+    
+    <div class="nav-top-left">
+      <a class="site-title" href="/" title="Home">Brad Rathke Blog</a>
+    </div>
+    
+    <div class="nav-top-center">
+      <a href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss" aria-hidden="true"></i></a>
+      <a href="https://www.github.com/{{ site.author.github }}"><i class="fa fa-github" aria-hidden="true"></i></a>
+      <a href="https://www.twitter.com/{{ site.author.twitter }}"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+      <a href="https://www.linkedin.com/in/brad-rathke-16343410b"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      <a href="mailto:me@brad-rathke.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+    </div>
+    
+    <div class="nav-top-right">
+      <a href="/">Home</a>
+      {% assign pages_list = site.pages %}
+      {% for item in pages_list %}
+        {% if item.title != null %}
+          {% if item.layout == "page" %}
+            <a href="{{ item.url }}">{{ item.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+    </div>
+  </nav>
+</div>

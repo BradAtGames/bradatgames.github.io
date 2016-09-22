@@ -1,0 +1,32 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+---
+
+{% assign publications_list = site.publications %}
+{% for pub in publications_list %}
+{% if pub.title != null %}
+<div class="publication">
+  <table class="publication">
+    <tr>
+      <td><img src="{{pub.img}}" class="publication-image"/></td>
+      <td>
+        <a href="{{pub.link}}">
+          <p class="publication-title">{{pub.title}}</p>
+        </a>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><p class="publication-abstract">{{pub.abstract}}</p></td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <p class="publication-bibtex">BibTeX:</p>
+        {% highlight bibtex %}{{pub.bibtex}}{% endhighlight %}
+      </td>
+    </tr>
+  </table>
+</div>
+{% endif %}
+{% endfor %}
