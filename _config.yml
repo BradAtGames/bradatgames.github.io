@@ -30,7 +30,7 @@ safe: true
 
 gems: ['jekyll-related-posts']
 include: ['_pages', '_posts', '_publications']
-exclude: ['Gemfile', 'Gemfile.lock', '.gitignore', '.git', '_data', '_scripts', '_site']
+exclude: ['Gemfile', 'Gemfile.lock', 'readme.md', '.gitignore', '.git', '_data', '_scripts', '_site']
 
 relative_permalinks: false
 permalink: pretty
