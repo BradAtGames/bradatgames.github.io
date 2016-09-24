@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
   
   <!-- Add site description to assist web crawlers -->
-  <meta name="description" content="{{ site.description }}">
+  <meta name="description" content="{% if page.abstract %}{{ page.abstract }}{% else %}{{ site.description }}{% endif %}">
   
   <title>
     {% if page.title %}
