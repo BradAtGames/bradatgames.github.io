@@ -47,7 +47,8 @@ However sigmoid functions do have some downsides that need to be considered:
   * Most importantly sigmoid functions *saturate* at the extremes which leads to what is known as [the vanishing gradient problem](https://en.wikipedia.org/wiki/Vanishing_gradient_problem).
   
 There are several alternative activation functions such as $$tanh$$, and more recently variants of the rectified linear unit (ReLU) have become very popular.
-However, sigmoid functions are very common in the literature and therefore we will make use of it *despite their negative aspects* so that you can be better prepared to do your own reading in the future. TODO: Find a paper or article that explains many different activation units.
+However, sigmoid functions are very common in the literature and therefore we will make use of it *despite their negative aspects* so that you can be better prepared to do your own reading in the future.
+[Wikipedia](https://en.wikipedia.org/wiki/Activation_function) has an excellent overview of several alternative activation functions.
 
 ### The Goal of Our Network
 Our network will be attempting to recognize the popular [MNIST](http://yann.lecun.com/exdb/mnist/) dataset which consists of 28x28 pixel images of hand written numerals 0 through 9.
