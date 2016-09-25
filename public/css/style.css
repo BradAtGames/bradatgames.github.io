@@ -18,7 +18,7 @@ footer {
 }
 
 body {
-    font-size: 16pt;
+    font-size: 14pt;
     font-family: "Helvetica Neue", Helvetica, Arial, Serif;
     color: #444;
 }
@@ -77,11 +77,33 @@ ul.post-list {
     color: #777;
     font-style: italic;
 }
-.post-title {
+
+div.post > h1 {
+    font-size: 1.5em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+div.post > h2 {
     font-size: 1.25em;
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+div.post > h3 {
+    font-size: 1em;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a.footnote {
+    text-decoration: none
+}
+
+div.footnotes {
+    font-size: .75em;
+}
+
 .post-abstract {
     font-size: 1em;
     margin-top: 0px;
@@ -133,4 +155,10 @@ div.post-bibtex {
 img.publication-image {
     width: 128px;
     height: 128px;
+}
+
+img.post-image {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
 }
