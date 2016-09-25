@@ -8,6 +8,9 @@
   <!-- Add site description to assist web crawlers -->
   <meta name="description" content="{% if page.abstract %}{{ page.abstract }}{% else %}{{ site.description }}{% endif %}">
   
+  <!-- Let webcrawlers know that this is an english language site -->
+  <link rel="alternate" href="http://www.brad-rathke.com" hreflang="en-us" />
+
   <title>
     {% if page.title %}
       {{ page.title }} &middot; {{ site.title }}
