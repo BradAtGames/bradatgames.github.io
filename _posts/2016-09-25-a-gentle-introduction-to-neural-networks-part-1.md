@@ -113,4 +113,4 @@ This version of MNIST had the following header: 2051, 60000, 28, 28
 
 Next time, we'll fully load the MNIST dataset and begin development of the neural net.
 
-A Jupyter Notebook containing the python code for this article can be found [here](https://github.com/brad-rathke/gentle-intro-to-neuralnets-part-1)
+A Jupyter Notebook containing the python code for this article can be found [here](https://github.com/brad-rathke/gentle-intro-to-neuralnets-part-1).
