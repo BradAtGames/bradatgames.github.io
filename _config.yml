@@ -24,9 +24,8 @@ github_username:  brad-rathke
 
 # Build settings
 markdown: kramdown
-safe: true
 
-gems: ['jekyll-related-posts']
+gems: ['jekyll-sitemap']
 include: ['_pages', '_posts', '_publications']
 exclude: ['Gemfile', 'Gemfile.lock', 'readme.md', '.gitignore', '.git', '_data', '_scripts', '_site']
 
