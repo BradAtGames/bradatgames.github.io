@@ -3,8 +3,10 @@ html {
     min-height: 100%;
 }
 
-code {
-    word-wrap: break-word;
+pre, code {
+    word-wrap: break-word !important;
+    white-space: pre-wrap !important;
+    overflow-wrap: break-word !important;
 }
 
 footer {
