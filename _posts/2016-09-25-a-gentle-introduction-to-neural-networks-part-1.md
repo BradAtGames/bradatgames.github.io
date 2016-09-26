@@ -38,11 +38,13 @@ This is where our activation functions come in; the most commonly cited of which
 <img class="post-image" title="A Sigmoid Function" src="/public/images/a-gentle-introduction-to-neural-networks/sigmoid.png" />
 
 The sigmoid function is expressed by the equation $$\sigma(x) = \frac{1}{1 + e^{-x}}$$ and has a few desirable properties for our purposes.
+
   * The sigmoid maps values to a range of (0,1), that is that very large inputs map to values close to 1 and very small inputs map to values close to 0.
   * When we train the network, we're performing convex optimization so it is convenient that sigmoid functions are monotonic.
   * Since eventually we'll be needing to use our good friend calculus on the activation function it is nice that sigmoid functions are easily differentiable.
 
 However sigmoid functions do have some downsides that need to be considered:
+
   * Their output is not zero-centered. This will have implications during the training of the network -- more on this later.
   * Most importantly sigmoid functions *saturate* at the extremes which leads to what is known as [the vanishing gradient problem](https://en.wikipedia.org/wiki/Vanishing_gradient_problem).
   
