@@ -26,7 +26,7 @@ github_username:  brad-rathke
 markdown: kramdown
 
 gems: ['jekyll-sitemap']
-include: ['_pages', '_posts', '_publications']
+include: ['_pages', '_publications']
 exclude: ['Gemfile', 'Gemfile.lock', 'readme.md', '.gitignore', '.git', '_data', '_scripts', '_site']
 
 relative_permalinks: false
